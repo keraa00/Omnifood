@@ -320,7 +320,7 @@
   align-items: center;
 }
 
-.testimonial-container {
+.testimonials-container {
   padding: 9.6rem;
 }
 
@@ -352,20 +352,21 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
 }
 
 .gallery-item img {
   display: block;
   width: 100%;
+  transition: all 0.4s;
 }
 
 .gallery-item img:hover {
   transform: scale(1.1);
-  transition: all 0.4s;
-}
-
-.gallery-item {
-  overflow: hidden;
 }
 
 .plan-name {
@@ -437,4 +438,32 @@
   justify-self: end;
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
 }
