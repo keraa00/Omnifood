@@ -24,7 +24,10 @@
   </head>
   <body>
     <header class="header">
-      <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+      <a href="#">
+        <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+      </a>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Section 1</a></li>
@@ -554,6 +557,84 @@
           </div>
         </div>
       </section>
+
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    placeholder="me@example.com"
+                    id="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select name="" id="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+              </form>
+            </div>
+            <div class="cta-img-box"></div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container grid grid--5-cols">
+        <div class="logo-col">
+          <a href="#">
+            <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+          </a>
+
+          <p class="copyright">
+            Copyright &copy;2024 by Omnifood, Inc. All rights reserved
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p>
+              <a href="tel:415-201-6370">415-201-6370</a>
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">Nav 1</nav>
+        <nav class="nav-col">Nav 2</nav>
+        <nav class="nav-col">Nav 3</nav>
+      </div>
+    </footer>
   </body>
 </html>
