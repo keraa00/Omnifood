@@ -66,6 +66,7 @@ html {
   /* makes the rem be 10px */
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -74,6 +75,8 @@ body {
   font-weight: 400;
   color: #555;
   overflow-x: hidden;
+
+  scroll-behavior: smooth;
 }
 
 /*****************************************/

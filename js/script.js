@@ -30,3 +30,21 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+// Select the header element and the target section
+const header = document.querySelector(".header");
+const sectionHow = document.querySelector("#how");
+
+// Function to handle sticky class
+const handleStickyNav = function () {
+  const sectionTop = sectionHow.getBoundingClientRect().top;
+
+  if (sectionTop <= 0) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+};
+
+// Add event listener to scroll
+window.addEventListener("scroll", handleStickyNav);
